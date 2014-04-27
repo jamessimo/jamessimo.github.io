@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    James Simonson -- Lead Dev -- <@james_simo>
+
+# THANKS
+
+    Daniel Eden - Animate.css (and contributors) -- https://github.com/daneden/animate.css
+    HTML5 Boilerplate - http://html5boilerplate.com/
+    Github Pages - pages.github.com
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

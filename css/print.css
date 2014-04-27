@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  /* line 7, ../sass/print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 15, ../sass/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 19, ../sass/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 23, ../sass/print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 29, ../sass/print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 34, ../sass/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 39, ../sass/print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 44, ../sass/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 48, ../sass/print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 58, ../sass/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 64, ../sass/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
