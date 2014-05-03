@@ -632,12 +632,11 @@ footer {
 			margin: 0;
 			padding: 0;
 			position: relative;
-			 
 			-webkit-transform-origin: 50% 52.6%; //correction, I dont know why
 			transform-origin: 50% 52.6%;
 			-webkit-animation: rotatingcw 10s infinite linear;
 			animation: rotatingcw 10s infinite linear;
-						&.cog1 {
+			&.cog1 {
 				font-size: 170px;
 				left: 118px;
 				top: 20px;
