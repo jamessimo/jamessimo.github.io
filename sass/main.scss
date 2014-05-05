@@ -443,6 +443,7 @@ footer {
    Media Queries
    ========================================================================== */
 
+//LARGE MOBILE
 @media only screen and (min-width: 480px) {
 	html,
 	button,
@@ -632,7 +633,7 @@ footer {
 			margin: 0;
 			padding: 0;
 			position: relative;
-			-webkit-transform-origin: 50% 52.6%; //correction, I dont know why
+			-webkit-transform-origin: 50% 52.6%; //Center correction, I dont know why
 			transform-origin: 50% 52.6%;
 			-webkit-animation: rotatingcw 10s infinite linear;
 			animation: rotatingcw 10s infinite linear;
