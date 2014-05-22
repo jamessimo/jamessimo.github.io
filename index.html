@@ -27,32 +27,32 @@
 		<p class="browsehappy">HEY! Thanks for visiting my site, unfortunately you seem to be using an <strong>outdated</strong> browser.<br/>Please <a href="http://browsehappy.com/">upgrade your browser</a> to view my site they way it was meant to be viewed.</p>
 		<![endif]-->
 
-		<!--<p class="shoutbox"><i class="icon-megaphone">Announcement:</i> GOOD NEWS! <a href="http://jamessimo.github.io/Commuter-Fling/">Commuter Fling!</a> has just been <strong>launched</strong> on the google play store! <a id="close-shout" href="#"><i class="icon-cancel"></i><i class="icon-megaphone"></i></a></p>-->
+		<!--<p class="shoutbox"><i class="icon-megaphone">Announcement:</i> GOOD NEWS! <a href="http://jamessimo.github.io/Commuter-Fling/">Commuter Fling!</a> has just been <strong>launched</strong> on the <a title="Download now!">Apple app store</a> for iPad! <a id="close-shout" href="#"><i class="icon-cancel"></i><i class="icon-megaphone"></i></a></p-->
 		
 	 	<h1>Hi! i'm James.</h1>
         <h2>This is what I do</h2>
         <article class="my-body">
 	       	<ul class="frontendlist">
-	            <li class="html">HTML5</li>
-	            <li class="css">CSS3</li>
-	            <li class="sass">SASS</li>
-	            <li class="js">Java Script</li>
-	            <li class="jquery">jQuery</li>
-	            <li class="ux">Design + UX</li>
-	            <li class="responsive">Responsive</li>
+	            <li class="html">HTML5 <span class="long">I use the most up-to-date HTML including the canvas!</span> </li>
+	            <li class="css">CSS3 <span>I love CSS3, hell this tool tip is pure CSS3! </span> </li>
+	            <li class="sass">SASS <span>Using SASS, my code is readable and scaleable!</span> </li>
+	            <li class="js">Java Script <span class="long">I use Javascript to build webpages, apps and even games</span></li>
+	            <li class="jquery">jQuery <span>I want my javascript to work on all browsers</span></li>
+		            <li class="ux">Design + UX <span class="long">I strive to build beautiful and practical products</span></li>
+	            <li class="responsive">Responsive <span>I always design and develop mobile first</span></li>
 	        </ul>
 	        <div class="centertext">
 		        <!--<h3 class="frontend">Front End</h3>
 		        <h3 class="backend">Backend</h3>-->
 	        </div>
 	        <ul class="backendlist">
-		        <li class="php">PHP</li>
-		        <li class="drupal">Drupal</li>
-		        <li class="sql">mySQL</li>
+		        <li class="php">PHP <span class="long" >Quickly building dynamic websites and services</span></li>
+		        <li class="drupal">Drupal <span class="long">I use Drupal to build massive content driven websites</span></li>
+		        <li class="sql">mySQL <span class="long">Massive content driven websites need a solid DB</span></li>
 		        <li class="mdb">MongoDB</li>
-		        <li class="seo">SEO</li>
-		        <li class="wordp">WordPress</li>
-		        <li class="unix">UNIX</li>
+		        <li class="seo">SEO <span class="long">I want people to easily find my awesome projects</span></li>
+		        <li class="wordp">WordPress<span>Extensive experience with Wordpress sites</span></li>
+		        <li class="unix">UNIX <span>I use UNIX + LINUX systems daily</span></li>
 	        </ul>
 	  		</article>
 	  	</section>
@@ -74,11 +74,16 @@
     <section class="contact">
     	<article>
     	    <h2>Drop me a line</h2>
-        	<a title="email" href="mailto:jamessimo@outlook.com" class="icon-mail-alt"></a>
-        	<a title="twitter" href="https://twitter.com/james_simo" class="icon-twitter"></a>
-        	<a title="google plus" href="https://plus.google.com/107967684340447771271/" class="icon-gplus"></a>
-        	<a title="linkedin" href="https://www.linkedin.com/profile/view?id=334449959" class="icon-linkedin-squared"></a>
-        	<a title="github" href="https://github.com/jamessimo" class="icon-github"></a>
+        	<a id="email" title="email" href="mailto:jamessimo@outlook.com" class="icon-mail-alt"></a>
+        	<a id="twitter" title="twitter" href="https://twitter.com/james_simo" class="icon-twitter" target="_blank"></a>
+        	<a id="gplus" title="google plus" href="https://plus.google.com/107967684340447771271/" class="icon-gplus" target="_blank"></a>
+        	<a id="linkedin" title="linkedin" href="https://www.linkedin.com/pub/james-simonson/94/b/51b" class="icon-linkedin-squared" target="_blank"></a>
+        	<a id="github" title="github" href="https://github.com/jamessimo" class="icon-github" target="_blank"></a>
+        	<div style="display: inline; position:relative;"><a id="wechat" title="wechat" href="#" class="icon-qrcode"></a>
+        		<div id="wechatqrcode"><img src="img/myqrcode.png" />
+        			<div class="arrow-down"></div>
+        		</div>
+        	</div>
         	<p class="cheeky">I won't bite <span class="showover">hard...</span></p>
     	</article>
     </section>
@@ -94,8 +99,9 @@
     	</div>
     </footer>
 
-    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    
     <script src="js/plugins.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -104,7 +110,28 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
 		ga('create', 'UA-50342249-1', 'jamessimo.com');
+		ga('require', 'linkid', 'linkid.js');
 		ga('send', 'pageview');
+		
+		jQuery('#email').click(function(){
+			ga('send', 'event', 'email', 'click');
+		});
+		jQuery('#twitter').click(function(){
+			ga('send', 'event', 'twitter', 'click');
+		});
+		jQuery('#gplus').click(function(){
+			ga('send', 'event', 'googleplus', 'click');
+		});
+		jQuery('#linkedin').click(function(){
+			ga('send', 'event', 'linkedin', 'click');
+		});
+		jQuery('#github').click(function(){
+			ga('send', 'event', 'github', 'click');
+		});
+		jQuery('#wechat').click( function() {
+			jQuery("#wechatqrcode").toggleClass('show');
+		     return false;
+		});
 	</script>
 </body>
 </html>

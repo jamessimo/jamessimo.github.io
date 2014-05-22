@@ -237,6 +237,67 @@ article {
 		&.unix {
 			background-color: $black;
 		}
+		span {
+			display: none;
+			position: absolute;
+			background-color: inherit;
+			transition: all 0.3s ease-in-out;
+			font-size: 80%;
+			width: 100px;
+			height: auto;
+			line-height: 20px;
+			padding: 10px;
+			left: -50%;
+			margin-left: -65px;
+			border-radius: 5px;
+			pointer-events: none;
+			top: -50%;
+			-webkit-transform: scale(0.9);
+			-ms-transform: scale(0.9);
+			transform: scale(0.9);
+			opacity: 0;
+			&.long{
+				width: 135px;
+				left: -75%;
+			}
+			&:before,
+			&:after{
+				content: '';		
+				position: absolute;
+				left: 100%;
+				width: 0;
+				top: 40%;
+				height: 0;
+				background-color: inherit;
+				border-top: 10px solid $white;
+				border-bottom: 10px solid $white;
+				border-left: 10px solid transparent;
+			}
+			&:after{
+				 bottom: -14px;
+				 margin-left: -10px;
+				 border-top: 10px solid $white;
+			}
+		}
+	}
+}
+.backendlist {
+	li {
+		span{
+			left: 158%;
+			&.long{
+				
+				left: 158%;
+			}
+			&:before,
+			&:after{
+				border-left: none;
+				border-top: 10px solid $white;
+				border-bottom: 10px solid $white;
+				border-right: 10px solid transparent;
+				left: -10px;
+			}
+		}
 	}
 }
 
@@ -279,8 +340,10 @@ article {
 		display: inline-block;
 		position: relative;
 		opacity: 0.4;
+		transition: opacity 0.3s;
 		i {
 			position: relative;
+			display: -webkit-inline-flex;
 			display: inline-flex;
 			height: 50px;
 			top: 20px;
@@ -290,6 +353,7 @@ article {
 			i {
 				 -webkit-animation: wobble 0.8s;
 				 animation: wobble 0.8s;
+			
 			}
 			opacity: 1;
 		}
@@ -320,9 +384,6 @@ article {
 		font-size: 200%;
 		padding-right: 10px;
 		display: inline-block;
-		&:last-of-type {
-			padding-right: 0;
-		}
 		&:hover {
 			-webkit-animation: pulse 0.8s;
 			animation: pulse 0.8s;
@@ -338,6 +399,25 @@ article {
 		&:hover .showover{
 			display: inline;
 		}	
+	}
+	
+	#wechatqrcode{
+		max-width: 430px;
+		max-height: 430px;
+		position: relative;
+		margin: 20px auto;
+		box-shadow: 0px 0px 40px $black;
+		display: none;
+		transition: all 0.8s ease-in-out;
+		top: 0;
+			
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		&.show{
+			display: block;	
+		}
 	}
 }
 
@@ -398,6 +478,12 @@ article {
 			text-align: center;
 		}
 	}
+	.grad-profile{
+		text-align: center;
+		a{
+			color: $sunset;
+		}
+	}
 }
 
 // LABS
@@ -412,6 +498,9 @@ article {
 	.subtitle {
 		background: $grey;
 	}
+}
+.todo{
+	text-align: center;
 }
 .coming-soon {
 	text-align: center;
@@ -436,6 +525,15 @@ footer {
 	}
 	small {
 		opacity: 0.4;
+	}
+	a{
+		&:hover{
+			i {
+				 -webkit-animation: tada 0.8s;
+				 animation: tada 0.8s;
+			
+			}
+		}
 	}
 }
 
@@ -465,6 +563,21 @@ footer {
 		padding: 10px 0 30px 0;
 		#work {
 			padding: 0 40px;
+		}
+	}
+	.contact{
+		#wechatqrcode{
+			box-shadow: 0px 0px 40px $black;
+			.arrow-down{
+				width: 0; 
+				height: 0; 
+				border-left: 20px solid transparent;
+				border-right: 20px solid transparent;
+				border-bottom: 20px solid $white;
+				left: 337px;
+				position: relative;
+				top: -450px;
+			}
 		}
 	}
 	.games {
@@ -610,7 +723,18 @@ footer {
 			&.unix {
 				left: 66%;
 			}
+			&:hover span{
+				
+				-webkit-transform: scale(1);
+				-ms-transform: scale(1);
+				transform: scale(1);
+				opacity: 1;
+			}
+			span{
+				display: block
+			}
 		}
+		
 	}
 	.coming-soon {
 		height: 430px;
@@ -644,11 +768,15 @@ footer {
 			}
 			&.cog2 {
 				font-size: 200px;
+				-webkit-animation: rotatingccw 10s infinite linear;
+				animation: rotatingccw 10s infinite linear;
 			}
 			&.cog3 {
 				font-size: 130px;
 				right: 358px;
 				top: 125px;
+				-webkit-animation: rotatingccw 10s infinite linear;
+				animation: rotatingccw 10s infinite linear;
 			}
 		}
 		.hand {
@@ -680,11 +808,10 @@ footer {
 			width: 22px;
 			transform: rotate(-180deg);
 			-webkit-transform: rotate(-180deg);
-			left: 2px;
+			left: 1.5px;
 			color: $red;
 			animation: hue 5s infinite linear;
 			-webkit-animation: hue 5s infinite linear;
-			
 		}
 	}
 }

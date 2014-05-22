@@ -86,8 +86,8 @@
 					<li>UX</li>
 				</ul>
 			</div>
-			<!--<p><a href="http://appliedcomputin.wordpress.com/2013/01/25/graduate-profile-james-simonson-mailman-group/">My Graduate profile</a></p>-->
 		</article>
+		<p class="grad-profile"><a title="Graduate Profile: James Simonson" target="_blank" href="http://appliedcomputin.wordpress.com/2013/01/25/graduate-profile-james-simonson-mailman-group/">My graduate profile</a></p>
 	</section>
 	<section class="menu">
 	    <nav>
@@ -98,11 +98,16 @@
 	</section>
 	<section class="contact">
 		<article>
-		  <a title="email" href="mailto:jamessimo@outlook.com" class="icon-mail-alt"></a>
-		  <a title="twitter" href="https://twitter.com/james_simo" class="icon-twitter"></a>
-		  <a title="google plus" href="https://plus.google.com/107967684340447771271/" class="icon-gplus"></a>
-		  <a title="linkedin" href="https://www.linkedin.com/profile/view?id=334449959" class="icon-linkedin-squared"></a>
-		  <a title="github" href="https://github.com/jamessimo" class="icon-github"></a>		    	
+			<a id="email" title="email" href="mailto:jamessimo@outlook.com" class="icon-mail-alt"></a>
+			<a id="twitter" title="twitter" href="https://twitter.com/james_simo" class="icon-twitter" target="_blank"></a>
+			<a id="gplus" title="google plus" href="https://plus.google.com/107967684340447771271/" class="icon-gplus" target="_blank"></a>
+			<a id="linkedin" title="linkedin" href="https://www.linkedin.com/pub/james-simonson/94/b/51b" class="icon-linkedin-squared" target="_blank"></a>
+			<a id="github" title="github" href="https://github.com/jamessimo" class="icon-github" target="_blank"></a>
+			<div style="display: inline; position:relative;"><a id="wechat" title="wechat" href="#" class="icon-qrcode"></a>
+				<div id="wechatqrcode"><img src="img/myqrcode.png" />
+					<div class="arrow-down"></div>
+				</div>
+			</div>
 		</article>
 	</section>
 	<footer>
@@ -113,7 +118,8 @@
     </footer>
 
     <script src="js/plugins.js"></script>
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
     <script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -122,6 +128,11 @@
 		
 		ga('create', 'UA-50342249-1', 'jamessimo.com');
 		ga('send', 'pageview');
+		
+		jQuery('#wechat').click( function() {
+			jQuery("#wechatqrcode").toggleClass('show');
+		     return false;
+		});
     </script>
 </body>
 </html>
