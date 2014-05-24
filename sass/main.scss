@@ -388,6 +388,9 @@ article {
 			-webkit-animation: pulse 0.8s;
 			animation: pulse 0.8s;
 		}
+		&#wechat{
+			padding-right: 0px;
+		}
 	}
 	.showover {
 		display: none;
@@ -400,7 +403,6 @@ article {
 			display: inline;
 		}	
 	}
-	
 	#wechatqrcode{
 		max-width: 430px;
 		max-height: 430px;
@@ -574,7 +576,7 @@ footer {
 				border-left: 20px solid transparent;
 				border-right: 20px solid transparent;
 				border-bottom: 20px solid $white;
-				left: 337px;
+				left: 341px;
 				position: relative;
 				top: -450px;
 			}

@@ -86,13 +86,30 @@
     	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     	
-    	ga('create', 'UA-50342249-1', 'jamessimo.com');
-    	ga('send', 'pageview');
-    	
-    	jQuery('#wechat').click( function() {
-    		jQuery("#wechatqrcode").toggleClass('show');
-    	     return false;
-    	});
+		ga('create', 'UA-50342249-1', 'jamessimo.com');
+		ga('require', 'linkid', 'linkid.js');
+		ga('send', 'pageview');
+		
+		jQuery('#email').click(function(){
+			ga('send', 'event', 'email', 'click');
+		});
+		jQuery('#twitter').click(function(){
+			ga('send', 'event', 'twitter', 'click');
+		});
+		jQuery('#gplus').click(function(){
+			ga('send', 'event', 'googleplus', 'click');
+		});
+		jQuery('#linkedin').click(function(){
+			ga('send', 'event', 'linkedin', 'click');
+		});
+		jQuery('#github').click(function(){
+			ga('send', 'event', 'github', 'click');
+		});
+		jQuery('#wechat').click( function() {
+			ga('send', 'event', 'wechat', 'click');
+			jQuery("#wechatqrcode").toggleClass('show');
+			return false;
+		});
     </script>
 </body>
 </html>

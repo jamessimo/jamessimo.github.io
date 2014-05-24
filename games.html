@@ -79,7 +79,6 @@
 					<div class="arrow-down"></div>
 				</div>
 			</div>
-			
 		</article>
 	</section>
 	
@@ -89,6 +88,7 @@
     		<small>hosted on<a title="Github Pages are awesome!" href="https://pages.github.com/" target="_blank"> github <i class="icon-github"></i></a></small>
     	</div>
     </footer>
+    
     <script src="js/plugins.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
@@ -99,12 +99,30 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
 		ga('create', 'UA-50342249-1', 'jamessimo.com');
+		ga('require', 'linkid', 'linkid.js');
 		ga('send', 'pageview');
 		
-		jQuery('#wechat').click( function() {
-			jQuery("#wechatqrcode").toggleClass('show');
-		     return false;
+		jQuery('#email').click(function(){
+			ga('send', 'event', 'email', 'click');
 		});
+		jQuery('#twitter').click(function(){
+			ga('send', 'event', 'twitter', 'click');
+		});
+		jQuery('#gplus').click(function(){
+			ga('send', 'event', 'googleplus', 'click');
+		});
+		jQuery('#linkedin').click(function(){
+			ga('send', 'event', 'linkedin', 'click');
+		});
+		jQuery('#github').click(function(){
+			ga('send', 'event', 'github', 'click');
+		});
+		jQuery('#wechat').click( function() {
+			ga('send', 'event', 'wechat', 'click');
+			jQuery("#wechatqrcode").toggleClass('show');
+		    return false;
+		});
+	
 	</script>
 </body>
 </html>
