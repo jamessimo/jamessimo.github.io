@@ -186,7 +186,9 @@ article {
 .frontendlist {
 	padding-top: 434px;
 }
-
+#show-all{
+	display: none;
+}
 .frontendlist,
 .backendlist {
 	li {
@@ -680,6 +682,12 @@ footer {
 
 //WIDE SCREEN
 @media only screen and (min-width: 980px) {
+	#show-all{
+		color: $grey;
+		float: right;
+		margin-right: 15px;
+		display: inline;
+	}
 	.frontendlist,
 	.backendlist {
 		li {
@@ -725,7 +733,8 @@ footer {
 			&.unix {
 				left: 66%;
 			}
-			&:hover span{
+			&:hover span,
+			&.show span{
 				
 				-webkit-transform: scale(1);
 				-ms-transform: scale(1);
