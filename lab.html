@@ -27,7 +27,7 @@
     <![endif]-->
     <section class="lab">
     	<h1>My evil lab</h1>
-    	<p class="subtitle">more coming soon!</p>
+    	<p class="subtitle">more coming soon! <div id="screen-type" class="icon-desktop" style="font-size:200%;"></div></p>
     	
     	<article class="todo">
     		<h3>todo list</h3>
@@ -79,6 +79,30 @@
 
     <script src="js/plugins.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+		
+		$( window ).resize(function() {
+		 if($( window ).width() > 1025){
+			  $('#screen-type').removeClass();
+			  $('#screen-type').addClass('icon-desktop');
+		 }	 
+		  if($( window ).width() <= 1024){
+		  	$('#screen-type').removeClass();
+		  	$('#screen-type').addClass('icon-laptop');
+		  } 
+		  if ($( window ).width() <= 740) {
+		  	$('#screen-type').removeClass();
+		  	$('#screen-type').addClass('icon-tablet');
+		  }
+		  if  ($( window ).width() <= 480) {
+		  	$('#screen-type').removeClass();
+		  	$('#screen-type').addClass('icon-mobile');
+		  }
+		 		  
+		  
+		});
+		
+	</script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
     <script>
     	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
