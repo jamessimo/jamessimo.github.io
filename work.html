@@ -150,6 +150,10 @@
 			jQuery("#wechatqrcode").toggleClass('show');
 			return false;
 		});
+
+		if(jQuery('body').height() < jQuery( window ).height()){
+			jQuery('.work .history').height(jQuery('.work .history').height() + (jQuery(window).height() - jQuery( 'body' ).height()));
+		}
 	</script>
    </body>
 </html>
