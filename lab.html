@@ -82,25 +82,24 @@
 	<script>
 		
 		$( window ).resize(function() {
-		 if($( window ).width() > 1025){
-			  $('#screen-type').removeClass();
-			  $('#screen-type').addClass('icon-desktop');
+		 if ($( window ).width() > 1025){
+			$('#screen-type').removeClass();
+			$('#screen-type').addClass('icon-desktop');
 		 }	 
-		  if($( window ).width() <= 1024){
+		 if ($( window ).width() <= 1024){
 		  	$('#screen-type').removeClass();
 		  	$('#screen-type').addClass('icon-laptop');
-		  } 
-		  if ($( window ).width() <= 740) {
+		 } 
+		 if ($( window ).width() <= 740) {
 		  	$('#screen-type').removeClass();
 		  	$('#screen-type').addClass('icon-tablet');
-		  }
-		  if  ($( window ).width() <= 480) {
+		 }
+		 if ($( window ).width() <= 480) {
 		  	$('#screen-type').removeClass();
 		  	$('#screen-type').addClass('icon-mobile');
-		  }
-		 		  
-		  
+		 }
 		});
+		$( window ).resize();
 		
 	</script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
@@ -115,22 +114,22 @@
 		ga('send', 'pageview');
 		
 		jQuery('#email').click(function(){
-			ga('send', 'event', 'email', 'click');
+			ga('send', 'event', 'email','click');
 		});
 		jQuery('#twitter').click(function(){
-			ga('send', 'event', 'twitter', 'click');
+			ga('send', 'event', 'twitter','click');
 		});
 		jQuery('#gplus').click(function(){
-			ga('send', 'event', 'googleplus', 'click');
+			ga('send', 'event', 'googleplus','click');
 		});
 		jQuery('#linkedin').click(function(){
-			ga('send', 'event', 'linkedin', 'click');
+			ga('send', 'event', 'linkedin','click');
 		});
 		jQuery('#github').click(function(){
-			ga('send', 'event', 'github', 'click');
+			ga('send', 'event', 'github','click');
 		});
 		jQuery('#wechat').click( function() {
-			ga('send', 'event', 'wechat', 'click');
+			ga('send', 'event', 'wechat','click');
 			jQuery("#wechatqrcode").toggleClass('show');
 			return false;
 		});

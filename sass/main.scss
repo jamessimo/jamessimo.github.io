@@ -1,6 +1,10 @@
 /* jamessimo.com SASS file by James Simonson 2014*/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/OpenSans-Regular.ttf');
+}
+
 
 //COLOURS
 $red: #DB4437;
