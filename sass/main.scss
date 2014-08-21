@@ -484,6 +484,11 @@ article {
 		padding: 0 0 10px 0;
 		div {
 			text-align: center;
+			&.hireme{
+				a{
+					color: $sunset;
+				}
+			}
 		}
 	}
 	.grad-profile{
@@ -679,6 +684,17 @@ footer {
 			div {
 				width: 33.33%;
 				float: left;
+				&.hireme{
+					width: 65%;
+					border: 4px solid $navy;
+					a{
+						border: 4px solid #f05722;
+						padding: 10px;
+						margin-bottom: 10px;
+						display: inline-block;
+						font-weight: bold;
+					}
+				}
 			}
 		}
 	}
