@@ -1,0 +1,58 @@
+	<section class="contact">
+		<article>
+			<a id="email" title="email" href="mailto:jamessimo@outlook.com?subject=Hi James!" class="icon-mail-alt"></a>
+			<a id="twitter" title="twitter" href="https://twitter.com/james_simo" class="icon-twitter" target="_blank"></a>
+			<a id="gplus" title="google plus" href="https://plus.google.com/107967684340447771271/" class="icon-gplus" target="_blank"></a>
+			<a id="linkedin" title="linkedin" href="https://www.linkedin.com/pub/james-simonson/94/b/51b" class="icon-linkedin-squared" target="_blank"></a>
+			<a id="github" title="github" href="https://github.com/jamessimo" class="icon-github" target="_blank"></a>
+			<div style="display: inline; position:relative;"><a id="wechat" title="wechat" href="#" class="icon-wechat"></a>
+				<div id="wechatqrcode"><img src="/img/myqrcode.png" />
+					<div class="arrow-down"></div>
+				</div>
+			</div>
+		</article>
+	</section>
+	
+	<footer>
+    	<div class="wrapper">
+    		<p>site conceived, designed, implemented, tested and delivered by <strong>James Simonson</strong> 2014.</p>
+    		<small>hosted on<a title="Github Pages are awesome!" href="https://pages.github.com/" target="_blank"> github <i class="icon-github"></i></a> &amp; powered by <a href="http://jekyllrb.com/" target="_blank">jeykll</a></small>
+    	</div>
+    </footer>
+    
+    <script src="/js/plugins.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-50342249-1', 'jamessimo.com');
+		ga('require', 'linkid', 'linkid.js');
+		ga('send', 'pageview');
+		
+		jQuery('#email').click(function(){
+			ga('send', 'event', 'email', 'click');
+		});
+		jQuery('#twitter').click(function(){
+			ga('send', 'event', 'twitter', 'click');
+		});
+		jQuery('#gplus').click(function(){
+			ga('send', 'event', 'googleplus', 'click');
+		});
+		jQuery('#linkedin').click(function(){
+			ga('send', 'event', 'linkedin', 'click');
+		});
+		jQuery('#github').click(function(){
+			ga('send', 'event', 'github', 'click');
+		});
+		jQuery('#wechat').click( function() {
+			ga('send', 'event', 'wechat', 'click');
+			jQuery("#wechatqrcode").toggleClass('show');
+		    return false;
+		});
+	
+	</script>
+</body>
+</html>

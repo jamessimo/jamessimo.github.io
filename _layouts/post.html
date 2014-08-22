@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="post">
+
+<article>
+<p class="backblog"><a href="/blog"><i class="icon-angle-left"></i>back to blog</a></p>
+<p class="date"><i class="icon-calendar"></i>{{ page.date | date_to_string }}</p>
+<h1>{{ page.title }}</h1>
+<ul class="tags">
+    {% for tag in page.tags %}
+    <li class="tag"><a href="/tag/{{ tag }}" title="all {{ tag }} posts">#{{ tag }}</a></li>
+    {% endfor %}
+</ul>
+
+{{ content }}
+
+<p class=""><a href="/blog"><i class="icon-angle-left"></i> back to blog </a></p>
+</article>
+
+</section>
+<section class="menu">
+    <nav>
+        <a id="item1" title="games" href='/games'><i class="icon-gamepad"></i><span>games</span></a>
+        <a id="item2" title="home" href='/'><i class="icon-home"></i><span>home</span></a>
+ 		<a id="item1" title="work" href='/work'><i class="icon-doc-text-inv"></i><span>work</span></a>
+ 	</nav>
+</section>

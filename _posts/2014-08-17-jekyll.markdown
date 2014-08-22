@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "Blogging with Jekyll"
+date:   2014-08-17 15:45:33
+tags:
+- webdev
+
+---
+
+My first blog post has to acknolage how amazing using Jekyll is for my site. 
+
+I dont only use Jekyll as a lightweight static blog, I have also ultilized its html pre-processing for my site.
+
+**INCLUDES**
+
+ now I include my header and footer using Liquid includes like so,
+ 
+ {% highlight html %}
+ <ul class="tag_list">
+      {.% for tag in post.tags %}
+      <li class="inline archive_list"><a class="tag_list_link" href="/tag/{.{ tag }}">{.{ tag }}</a></li>
+      {.% endfor %}
+    </ul>
+{% endhighlight %}
+ 
+  which is really nice that now all the google analytics junk I put in my site can be edited once in oneplace the contact area have google events attached to them so on each page I had to write 72 lines of markup and javascript. 
+
+**TAGS**
+
+another cool think I have done with Jekyll is impliment a very basic tag system.
+
+Jekyll gives the option to tag a post, or put a post in a catagory. I only wanted 4 catagorys however I am already ypset by the size of a given blog URL /2014/08/21/screen-sizes.html and if I used catagorys that would only add to the length of the url, so to keep it short I used tags, 
+
+I followed http://charliepark.org/tags-in-jekyll/ however I didnt want to install any plugins so I opted just to copy this code 
+
+ {% highlight html %}
+<ul class="tag_list">
+     {.% for tag in post.tags %}
+     <li class="inline archive_list"><a class="tag_list_link" href="/tag/{.{ tag }}">{.{ tag }}</a></li>
+     {.% endfor %}
+   </ul>
+{% endhighlight %}
+
+and I made a page for each tag and only show posts for each tag, because I knew I only wanted people to sort through 4 topics I will cover. 
+
+jamessimo.com/tags/html5 would have somthing like this 
+
+{% highlight liquid %}
+		{.% for post in site.tags.MYTAG %}
+{% endhighlight %}
+
+ 
+
+[jekyll-gh]: https://github.com/mojombo/jekyll
+[jekyll]:    http://jekyllrb.com
