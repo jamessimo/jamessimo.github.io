@@ -3,7 +3,15 @@
 @font-face {
   font-family: 'Open Sans';
   src: url('../font/OpenSans-Regular.ttf');
+
 }
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../font/OpenSans-SemiBold.ttf');
+	font-weight: bold;
+}
+
+
 
 
 //COLOURS
@@ -67,9 +75,14 @@ a {
 p {
 	font-size: 110%;
 }
-pre{
-	padding: 0 10px;
+pre {
+	padding: 5px 10px;
 	display: inline-block;
+	text-align: left;
+}
+em {
+	font-style: italic;
+	//text-decoration: underline;
 }
 hr {
     display: block;
@@ -102,6 +115,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 .browsehappy {
 	background: $grey;

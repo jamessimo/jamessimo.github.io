@@ -14,3 +14,8 @@ github_username:  jamessimo89@gmail.com
 markdown: kramdown
 include:
 - .htaccess	
+ 
+#permalink: pretty
+
+#kramdown:
+ # input: GFM
