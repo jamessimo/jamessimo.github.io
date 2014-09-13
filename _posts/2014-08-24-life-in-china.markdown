@@ -22,3 +22,4 @@ With that said, I will call this section of my blog **"CRASH COURSE CHINA"** whe
 I want to talk about things that I have learned by my self and stuff that no-one else online talks about, you wont find any of the common living in China stuff here. Think of these as **"Life Hacks"** for China. 
 
 If you live near **Suzhou** and want to contact me feel free to add me on wechat or email me (*links in the bottom of the page*)
+http://tongji.baidu.com/data/browser
