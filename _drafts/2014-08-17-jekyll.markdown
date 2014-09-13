@@ -1,0 +1,171 @@
+---
+layout: post
+title:  "Blogging with Jekyll"
+date:   2014-08-17 15:45:33
+tags:
+- webdev
+
+
+---
+
+My first blog post has to be about how amazing using [Jekyll] is for my site. 
+Jekyll is a blog-aware html preprocessor, I simply build a new Jekyll install in my ~/sites folder like so
+
+{% highlight Bash shell scripts %}
+$ gem install jekyll
+$ jekyll new ~/Sites/jamessimo.com
+$ cd ~/Sites/jamessimo.com
+$ jekyll serve --watch
+{% endhighlight %}
+
+Then I re-added all the orginal jamessimo.com files into the root of new jamessimo.com (you cannot build a new Jekyll site onto an exsiting site) and because I used the ---watch paramerter, all my old files were being complied into the &#95;sites folder.
+Then I visit localhost:4000 to see that my site is there! 
+
+But nothing has really changed, so I then went on to break up my orignal static pages suck as work, games and the index to use Jekyll and Liquid to include the header and footer instead of writng the header and footer for each page.
+ 
+
+**INCLUDES**
+
+Now I include my header and footer using Liquid includes on all pages like so; 
+
+<u>BEFORE:</u>
+ 
+{% highlight html %}
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<title>James Simonson | Web &amp; Games Developer</title>
+	<meta name="description" content="Web & Games developer living in Shanghai.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+	<section class="opener">
+		<h1>Hi! I'm James.</h1>
+		<h2>This is what I do</h2>
+		<span>The page main content!</span>
+	</section>
+	<footer>
+    	<div class="wrapper">
+    		<span>blah blah blah footer stuff</span>
+       	</div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
+	<script>
+		//72 Lines of google tracking stuff
+	</script>
+</body>
+</html>
+		
+{% endhighlight %}
+
+<u>AFTER:</u>
+ 
+ {% highlight html %}
+ ---
+ layout: default
+ title: Home
+ ---
+ <section class="opener">
+ 	<h1>Hi! I'm James.</h1>
+ 	<h2>This is what I do</h2>
+ 	<span>The page main content!</span>
+ </section>
+ 		
+ {% endhighlight %}
+ 
+ Now what has happand is that I have definded a layout in the top using [YAML FRONT MATTER] (this is in the  &#95;layouts folder as default.html) and what default.html will do is treat what ever is in the current html file as content, so when Jekyll goes to render lets say index.html, it will see in the [YAML FRONT MATTER] layout: default, so then it call default.html and render that using index.html as content like so  [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+ 
+{% highlight html %}
+
+{.% include header.html %}
+{.{ content }}
+{.% include footer.html %}
+
+{% endhighlight %}
+ 
+  Which is really nice that now all the google analytics junk I put in my site can be edited once along with all the contact area have google events attached to them so on each page I had to write 72 lines of markup and javascript. I orgianlly started with PHP and the one thing I say I can defantly miss from PHP is the use of Includes.
+
+**BLOG** 
+
+After I have re-formatted all the old pages now include the header and footer info, I then had to make a new blog page! So in my root I simply added a blog.html page and added the following HTML/LIQUID 
+
+{% highlight html %}
+---
+layout: default
+title: blog
+---
+<section class="blog">
+	<h1>The Blog</h1>
+	<article>
+		<ul class="posts">
+		{.% for post in site.posts %}
+		<li class="post">
+			<span class="date">{.{ post.date | date_to_string }}</span>
+			<h2> <a href="{.{ post.url }}">{.{ post.title }}</a></h2>
+			<span>{.{ post.content | truncatewords:146 }}</span>
+			<p><a href="{.{ post.url }}">read more</a></p>
+		</li>
+		{.% endfor %}
+		</ul>
+	</article>
+</section>
+	
+{% endhighlight %}
+
+Now what happens is that what ever markdown files are in the &#95;posts folder, ill be grabbed one by one, being formatted in the post.html inside the &#95;layouts like so;
+
+{% highlight html %}
+---
+layout: default
+---
+<article class="single-post">
+<h1>{.{ page.title }}</h1>
+{.{ content }}
+</article>
+
+{% endhighlight %}
+
+**TAGS**
+
+Another cool thing I have done with Jekyll is impliment a very basic tag system.
+
+Jekyll gives the option to tag a post, or put a post in a catagory. I only wanted 4 catagorys however I am already upset by the size of a given blog URL /2014/08/21/screen-sizes.html and if I used catagorys that would only add to the length of the url, so to keep it short I used tags.
+(it is possible to change the permalink of a given post to make URLs shorter, however this has some issues http://jekyllrb.com/docs/permalinks/)
+
+I followed http://charliepark.org/tags-in-jekyll/ however I didnt want to install any plugins so I opted just to copy this code 
+
+{% highlight html %}
+<ul class="tag_list">
+{.% for tag in post.tags %}
+	<li class="inline archive_list">
+		<a class="tag_list_link" href="/tag/{.{ tag }}">{.{ tag }}</a>
+	</li>
+{.% endfor %}
+</ul>
+{% endhighlight %}
+
+and I made a page for each tag and only show posts for each tag, because I knew I only wanted people to sort through 4 topics I will cover. 
+
+jamessimo.com/tags/html5 would have somthing like this 
+
+{% highlight liquid %}
+		{.% for post in site.tags.MYTAG %}
+{% endhighlight %}
+
+**WRTITNG**
+
+So now that my blog is set up I have to write. Jekyll out the box renders markdown using http://kramdown.gettalong.org/ , if you are a github user and used to GitFlavored Makrdown then in the site config settings you can simply add this #kramdown:
+ # input: GFM and then you wirte the same way yo uused to on github. I opted for kramdown syntax only because 
+http://pygments.org/languages/
+ 
+
+[jekyll-gh]: https://github.com/mojombo/jekyll
+[Jekyll]:    http://jekyllrb.com
+[YAML FRONT MATTER]: http://jekyllrb.com/docs/frontmatter/

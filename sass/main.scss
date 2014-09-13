@@ -3,7 +3,15 @@
 @font-face {
   font-family: 'Open Sans';
   src: url('../font/OpenSans-Regular.ttf');
+
 }
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../font/OpenSans-SemiBold.ttf');
+	font-weight: bold;
+}
+
+
 
 
 //COLOURS
@@ -23,6 +31,7 @@ $white: #F9F9F9;
 $black: #4D4D4D;
 $grey: #CCCCCC;
 
+
 html,
 button,
 input,
@@ -32,7 +41,7 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.8em;
     line-height: 1.4;
-    background: #f9f9f9;
+    background: $white;
     
 }
 
@@ -66,7 +75,15 @@ a {
 p {
 	font-size: 110%;
 }
-
+pre {
+	padding: 5px 10px;
+	display: inline-block;
+	text-align: left;
+}
+em {
+	font-style: italic;
+	//text-decoration: underline;
+}
 hr {
     display: block;
     height: 1px;
@@ -98,6 +115,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 .browsehappy {
 	background: $grey;
@@ -550,6 +568,127 @@ footer {
 	}
 }
 
+//BLOG
+.blog {
+	text-align: center;
+	h1 {
+		color: $white;
+		padding: 10px;
+		margin: 0;
+		text-align: center;
+		background: $turquoise;
+	}
+	a {
+		color: $sunset;
+	}
+	.subtitle {
+		color: $white;
+		background: $navy;
+		a{
+			color: $white;
+			opacity: 0.8;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+	.posts{
+		.post{
+			border-bottom: 1px solid $grey;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+			&:last-child{
+				border-bottom: none;
+			}
+			h2{
+				clear: both;
+			}
+			.date{
+				float: right;
+				color: $grey;
+			}
+			.tags{
+				display: inline-block;
+				margin: 0px;
+				.tag{
+					float: left;
+					margin-right: 10px;
+					padding: 5px;
+					border: 1px solid $sunset;
+					&:last-child{
+						margin: 0;
+					}
+					&:hover{
+						background: $sunset;
+						a{
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//POST
+.post {
+	text-align: center;
+	padding-bottom: 10px;
+	h1 {
+		clear: both;
+	}
+	h2{
+		clear: both;
+	}
+	a {
+		color: $sunset;
+	}
+	ul{
+		font-size: 110%;
+	}
+	
+	.subtitle {
+		color: $white;
+		background: $navy;
+		a{
+			color: $grey;
+		}
+	}
+	
+	.backblog{
+		float: left;
+		a{
+			color: $grey;
+		}
+		
+	}
+
+	.date{
+		float: right;
+		color: $grey;
+	}
+	.tags{
+		display: inline-block;
+		margin: 0px;
+		.tag{
+			float: left;
+			margin-right: 10px;
+			padding: 5px;
+			border: 1px solid $sunset;
+			&:last-child{
+				margin: 0;
+			}
+			&:hover{
+				background: $sunset;
+				a{
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -697,6 +836,10 @@ footer {
 				}
 			}
 		}
+	}
+	nav,
+	article {
+		width: 80%;
 	}
 }
 
