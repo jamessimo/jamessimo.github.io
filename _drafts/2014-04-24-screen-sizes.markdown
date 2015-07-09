@@ -17,9 +17,9 @@ The game text and objects look horrid.
 By horrid I mean blurry and un-focused, this is because I am developing on a Macbook Pro with a retina screen and stuff made with javascript (rectangles, text objecs etcs) does not utilise the current devices pixel ratio 
 http://www.html5rocks.com/en/tutorials/canvas/hidpi/
 
+When it comes to mobile HTML5 games there are a few new problems to solve when compared to desktop. For example managing the resize of the game area is very important, whether you’re rendering the game using DOM or Canvas. Noboby wants to play the game that takes only half of the screen, because everything would be just too small. On the other hand having the game area twice as the screen size and forcing user to scroll it is also a very bad idea. Resizing the game area to fit the device screen is the best solution in this situation. Let’s see what options we have right now.
 
 This was fixed by scaling up my whole game to match the device pixel ratio, then scale the game down to the physical pixel diementions 
-When it comes to mobile HTML5 games there are a few new problems to solve when compared to desktop. For example managing the resize of the game area is very important, whether you’re rendering the game using DOM or Canvas. Noboby wants to play the game that takes only half of the screen, because everything would be just too small. On the other hand having the game area twice as the screen size and forcing user to scroll it is also a very bad idea. Resizing the game area to fit the device screen is the best solution in this situation. Let’s see what options we have right now.
 
 {% highlight javascript %}
 PIXEL_RATIO = (function () {
@@ -36,7 +36,7 @@ PIXEL_RATIO = (function () {
 
 {% endhighlight %}
  
- lol
+Then inside the resize function I simply 
 	
 {% highlight javascript %}
 this.onResize = function(event){
