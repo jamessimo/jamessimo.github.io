@@ -382,16 +382,13 @@ article {
 		}
 	}
 	#item1 {
-		width: 95px;
-		padding-right: 10px;
+		width: 80px;
 	}
 	#item2 {
-		width: 80px;
-		padding: 0 20px;
+		width: 85px;
 	}
 	#item3 {
 		width: 70px;
-		padding-left: 10px;
 	}
 }
 
@@ -715,7 +712,21 @@ footer {
 		#work {
 			padding: 0 40px;
 		}
+    #item1 {
+      width: 95px;
+      padding-right: 10px;
+    }
+    #item2 {
+      width: 80px;
+      padding: 0 20px;
+    }
+    #item3 {
+      width: 70px;
+      padding-left: 10px;
+    }
 	}
+
+
 	.contact{
 		#wechatqrcode{
 			box-shadow: 0px 0px 40px $black;
