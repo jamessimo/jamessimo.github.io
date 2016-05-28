@@ -6,9 +6,9 @@ tags:
 - life
 ---
 
-On May 16th at 10:38am 2016 I officially became a father. Naturally this was a very exciting and emotional time for me. After I held my baby for the first time and the midwife took him away I sat on a cold waiting bench and started thinking about all my new responsibilities and how need to make sure if the worst happens me and my new family are prepared.
+On May 16th at 10:38am 2016 I officially became a **father**. Naturally this was a very exciting and emotional time for me. After I held my baby for the first time, the midwife came took him away to get cleaned up. I sat on a cold bench outside the delivery room and started thinking about all my new responsibilities and how I need to make sure if the worst happens too me, my new family are prepared.
 
-I was thinking about health in China, this ranges from everything from health insurance, to getting prescriptions or even just visiting a doctor with a stomach flu. I decided to write this as a “Crash Course China" guide to help other expats in China understand what is needed to live in China knowing you are safe from any unforeseen “what if” situations.
+I was thinking about health in China, this ranges from everything from health insurance, to getting prescriptions or even just visiting a doctor with a stomach flu. I decided to write this as a **“Crash Course China"** guide to help other expats in China understand what is needed to live in China knowing you are safe from any unforeseen *“what if”* situations. I will talk about what is given to you from the state, what you can do too protect your self financially and how to manage with Hospitals inside of China.
 
 Social Benefits/Social insurance
 --------------------------------
@@ -41,7 +41,7 @@ Some companies inside China will take out private insurance for you and a spouse
 
 Hospitals in China
 ------------------
-In China you goto a hospital for everything, from the sniffles to quadruple bypass surgery you goto a hospital. These can be weird to outsiders, you first see a pay window before you see a doctor or nurse. Let's say your sick with a stomach bug, you goto your nearest (public) hospital and goto the pay window and say you want too see a doctor about your stomach. They will ask you to pay some money *(normally 7 to 20rmb in public hospitals)* and then you will go see a doctor who knows about stomachs.
+In China you goto a hospital for **everything**, from the sniffles to quadruple bypass surgery you goto a hospital. This can be weird to outsiders, you will first see a pay window before you see a doctor or nurse. Let's say your sick with a stomach bug, you goto your nearest (public) hospital and goto the pay window and tell the person behind the pay window you want too see a doctor about your stomach. They will ask you to pay some money *(normally 7 to 20RMB in public hospitals)* and then you will go see a doctor who knows about stomachs.
 
 The doctor will listen to your ailments and do some checks (heart beat, temperature etc..) then they will normally just prescribe you some medicine on a slip of paper. You take the prescription back to the pay window and pay for the prescriptions, than they will give you another piece of paper and you take that to the prescription window.
 
