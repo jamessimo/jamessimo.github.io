@@ -1,4 +1,4 @@
-/* jamessimo.com SASS file by James Simonson 2014*/
+/* jamessimo.com SASS file by James Simonson 2014 - Revised 2016*/
 
 @font-face {
   font-family: 'Open Sans';
@@ -16,7 +16,7 @@ $red: #DB4437;
 $sunset: #F05722;
 $orange: #E7981D;
 $yellow: #F4DF3B;
-$lime: #CDDC39;
+$lime: #4CDCAF;
 $green: #65B045;
 $turquoise: #11A9CC;
 $blue: #4285F4;
@@ -490,6 +490,17 @@ article {
 	h1 {
 		background: $navy;
 	}
+  blockquote{
+    border: 2px dashed $red;
+    padding:15px;
+    b{
+      color:$red;
+    }
+    a{
+     color: $sunset;
+   }
+  }
+
 	.subtitle {
 		color: $white;
 		background: $burgundy;
@@ -505,6 +516,7 @@ article {
 			}
 		}
 	}
+
 	.grad-profile{
 		text-align: center;
 		a{
@@ -630,6 +642,14 @@ footer {
 .post {
 	text-align: center;
 	padding-bottom: 10px;
+  .post-content{
+    margin:auto;
+    text-align: left;
+    ul {
+      list-style: circle;
+      margin-left: 20px;
+    }
+  }
 	h1 {
 		clear: both;
 	}
@@ -921,6 +941,10 @@ footer {
 		}
 
 	}
+  //post
+  .post-content{
+    width:80%;
+  }
 	.coming-soon {
 		height: 430px;
 		text-align: center;
