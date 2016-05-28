@@ -6,6 +6,7 @@ tags:
 - life
 ---
 
+
 On May 16th at 10:38am 2016 I officially became a **father**. Naturally this was a very exciting and emotional time for me. After I held my baby for the first time, the midwife came took him away to get cleaned up. I sat on a cold bench outside the delivery room and started thinking about all my new responsibilities and how I need to make sure if the worst happens too me, my new family are prepared.
 
 I was thinking about health in China, this ranges from everything from health insurance, to getting prescriptions or even just visiting a doctor with a stomach flu. I decided to write this as a **“Crash Course China"** guide to help other expats in China understand what is needed to live in China knowing you are safe from any unforeseen *“what if”* situations. I will talk about what is given to you from the state, what you can do too protect your self financially and how to manage with Hospitals inside of China.
@@ -41,15 +42,26 @@ Some companies inside China will take out private insurance for you and a spouse
 
 Hospitals in China
 ------------------
+
+**Public Hospitals**
+
 In China you goto a hospital for **everything**, from the sniffles to quadruple bypass surgery you goto a hospital. This can be weird to outsiders, you will first see a pay window before you see a doctor or nurse. Let's say your sick with a stomach bug, you goto your nearest (public) hospital and goto the pay window and tell the person behind the pay window you want too see a doctor about your stomach. They will ask you to pay some money *(normally 7 to 20RMB in public hospitals)* and then you will go see a doctor who knows about stomachs.
 
 The doctor will listen to your ailments and do some checks (heart beat, temperature etc..) then they will normally just prescribe you some medicine on a slip of paper. You take the prescription back to the pay window and pay for the prescriptions, than they will give you another piece of paper and you take that to the prescription window.
 
-If you have a bigger problem then they will ask you to have some medical tests like a CT scan or a blood test (they like blood tests in China) once again they will ask you to first goto the pay window and pay, then take the proof of payment paper to a doctor who will preform the test on you. Remember that this can be cash or your social benefit card. If you only have private insurance then you will pay cash first then claim it back later (however most private insurers will only pay out if you have a bill of over a certain amount).
+If you have a bigger problem then they will ask you to have some medical tests like a CT scan or a blood test (they like blood tests in China) once again they will ask you to first goto the pay window and pay, then take the proof of payment paper to a doctor who will preform the test on you.
+
+A common treatment I have noticed in public hospitals is intravenous treatment (IV), in China some doctors prefer to give you medicine via IV instead of oral tablets or injection. This means that instead of giving you a prescription to take at home, they will ask you to sit in a large waiting room hooked up too an IV drip for 2 to 4 hours. I personally ask for an oral or injection option as I do not fancy sitting for 4 hours on my phone surrounded by other sick people.  
+
+ > *Remember that this can be **cash** or your **social benefit card**. If you only have private insurance then you will pay cash first then claim it back later (however most private insurers will only pay out if you have a bill of over a certain amount).*
+
+**Private Hospitals & Clinics**
 
 If your Chinese level is not good enough or you would rather speak English then visit large private hospitals, some private hospitals will accept social benefits and offer English doctors (normally costs over 200rmb for a consultation with a doctor and most tests will cost more, this is referred too as "VIP service").
 
-These are a nice alternative if you want a more pleasant experience, however be aware that private hospitals may try to up sell you treatments and procedures that may not be covered by your benefits.
+If you would like to be treated by a foreign doctor who went to medical school abroad then you can try a smaller private clinic. These work more like GPs where you will only see one doctor and that doctor will diagnose you and will prescribe you foreign imported medicine. These clinics are not covered by your social benefits and obviously cost more (around 350RMB for a consultation, personally have paid 530RMB for a stomach bug which I was prescribed 2 weeks of antibiotics)
+
+> *These are a nice alternative if you want a more pleasant experience, however be aware that private hospitals may try to up sell you treatments and procedures that may not be covered by your benefits.*
 
 Another thing to watch out for in both private and public institutions is what they prescribe you. I noticed that when they prescribe you medicine, they bundle in nutrition supplements, the Chinese try to cure the cause of your illness not the illness itself. So say you go in for a headache, the doctor *will* prescribe you prescription strength paracetamol, however they will also bundle in some nutrition supplements that you could buy at any pharmacy (normally in the form of small bottled drinks or dried powered you add hot water too). Try to ask about what your doctor is prescribing and if it is medicine or a supplement, you can say no to these if you don't want them.
 
