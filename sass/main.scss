@@ -27,6 +27,7 @@ $brown: #795548;
 $white: #F9F9F9;
 $black: #4D4D4D;
 $grey: #CCCCCC;
+$mediumGreen: rgba(2, 184, 117, 1);
 
 
 html,
@@ -127,10 +128,12 @@ textarea {
 }
 
 .shoutbox {
-	background: $purple;
+	background: $mediumGreen;
 	color: $white;
-	padding: 20px 0;
-	margin: 0;
+  position: relative;
+
+	/*padding: 20px 0;
+	margin: 0;*/
 	transition: all 0.5s ease;
 	a {
 		text-decoration: underline;
@@ -138,6 +141,20 @@ textarea {
 	i {
 		opacity: 0.7;
 	}
+
+  .announceText{
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+
+  }
+  .mediumLogo{
+    display: inline-block;
+    padding: 10px;
+  }
+
+
 	#close-shout {
 		.icon-megaphone {
 			transition: all 0.5s ease;
@@ -168,6 +185,26 @@ textarea {
 			}
 		}
 	}
+}
+
+//mediumLogo
+.svgIcon-use{
+  path:nth-child(1) {
+    stroke: none !important;
+    fill: #5ACA8F !important;
+  }
+  path:nth-child(2) {
+    stroke: none !important;
+    fill: #71D29C !important;
+  }
+  path:nth-child(3) {
+    stroke: none !important;
+    fill: #99E2B6 !important;
+  }
+  path:nth-child(4) {
+    stroke: none !important;
+    fill: #BDF1CF !important;
+  }
 }
 
 .opener,
