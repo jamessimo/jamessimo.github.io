@@ -1,0 +1,21 @@
+{
+  "level" : [
+    {
+      "name" : "Danger Maouse",
+      "avatar" : "face1",
+      "body" : "body1",
+      "script" : [
+
+        {"role": 0, "delay" : 0 ,"speed" : 1, "text" : "Hello world! "},
+        {"role": 1, "delay" : 0 ,"speed" : 1.4, "text" : "Oh hello!", "avatar" : "sargon"},
+        {"role": 0, "delay" : 0 ,"speed" : 1, "text" : "This is very very cool! Hope my face shows"},
+        {"role": 1, "delay" : 0 ,"speed" : 1.4, "text" : "I am sure it will bro!","avatar" : "sargon"},
+        {"role": 0, "delay" : 0 ,"speed" : 1, "text" : "Time to test the winning state!!!"},
+        {"role": null, "delay" : 0 ,"speed" : 1, "text" : "", "winTrig":true}
+
+
+      ]
+    }
+  ]
+
+}
