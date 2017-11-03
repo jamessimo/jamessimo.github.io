@@ -254,7 +254,6 @@ article {
 .frontendlist,
 .backendlist {
   position: relative;
-  z-index: 1;
 
 	li {
 		width: 50%;
@@ -781,6 +780,9 @@ footer {
 	.my-body {
 		width: 90%;
 	}
+  .frontendlist, .backendlist {
+    position:relative;
+  }
 	.frontendlist {
 		padding-top: 390px;
 	}
@@ -843,6 +845,7 @@ footer {
 	}
 	.frontendlist,
 	.backendlist {
+    position:initial;
 		li {
 			width: 120px;
 			padding: 10px;
