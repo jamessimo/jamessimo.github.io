@@ -250,6 +250,7 @@ article {
 .frontendlist {
 	padding-top: 428px;
 }
+#toggle-poly,
 #show-all{
 	display: none;
 }
@@ -943,6 +944,7 @@ footer {
 
 //WIDE SCREEN
 @media only screen and (min-width: 980px) {
+  #toggle-poly,
 	#show-all{
     width: 0;
     z-index: 10;
@@ -952,6 +954,10 @@ footer {
 		position: absolute;
 		text-indent: 50px;
 	}
+  #toggle-poly{
+    opacity: 0;
+    text-indent: 60px;
+  }
 	.frontendlist,
 	.backendlist {
 		li {
